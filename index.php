@@ -11,6 +11,13 @@
       $this->numero_stanza = $room_number;
     }
 
+    // function __construct($room_number, $bed_number, $bath_number)
+    // {
+    //   $this->numero_stanza = $room_number;
+    //   $this->numero_letti = $bed_number;
+    //   $this->numero_bagni = $bath_number;
+    // }
+
     function get_parameters()
     {
       echo ("numero stanza: ".$this->numero_stanza." numero letti: ".$this->numero_letti." numero bagni: ".$this->numero_bagni."<br>");
@@ -29,6 +36,10 @@
   $stanza1->numero_bagni = 2;
   $stanza2->numero_bagni = 1;
   $stanza3->numero_bagni = 3;
+
+  // $stanza1 = new Stanza('001', '3', '2');
+  // $stanza2 = new Stanza('002', '1', '1');
+  // $stanza3 = new Stanza('003', '5', '3');
 
 ?>
 
